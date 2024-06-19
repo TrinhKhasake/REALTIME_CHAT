@@ -29,6 +29,11 @@ app.get("*", (req, res) => {
 	res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
 });
 
+// Add this to the main server
+app.get('/health', (req, res) => {
+    res.status(200).send('Main Server is healthy');
+});
+
 server.listen(PORT, () => {
 	connectToMongoDB();
 	console.log(`Server Running on port ${PORT}`);
