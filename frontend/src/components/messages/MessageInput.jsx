@@ -17,7 +17,7 @@ const MessageInput = () => {
     <form className='px-4 my-0 backdrop-blur opacity-100 ' onSubmit={handleSubmit}>
         <div className='w-full py-2 relative flex items-center'>
             <input type="text" 
-            className='border text-sm rounded-lg block w-full p-2.5  text-white'
+            className='border text-sm rounded-lg block w-full p-2.5  text-black'
             placeholder='Send a message'
             value={message}
 					onChange={(e) => setMessage(e.target.value)}
